@@ -46,6 +46,15 @@ vnoremap <Leader>s :sort<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" Clear search highlighting
+noremap <silent><Leader>/ :nohls<CR>
+
+" I can type :help on my own, thanks.
+noremap <F1> <Esc>
+
+" Map Q to repeat the last macro
+map Q @@
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Copy/Paste
@@ -312,3 +321,6 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 " wget http://www.vim.org/scripts/script.php?script_id=1494
 set nofoldenable
 
+" vim-fugitive - git wrapper
+" cd ~/vimfiles/bundle
+" git clone git://github.com/klen/python-mode.git
