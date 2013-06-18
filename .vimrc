@@ -165,7 +165,7 @@ set si
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Keep 50 lines of command line history
+" Command line history
 set history=700
 
 " Number of undo changes to keep track of
@@ -227,7 +227,7 @@ set mat=5
 " Width of document (used by gd)
 set tw=79
 
-" Show whitespace
+" Show extra whitespace at the end of lines
 " Must occur before color scheme
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
