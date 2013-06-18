@@ -273,7 +273,7 @@ set write
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Python
+" Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
 " cd ~/vimfiles/bundle
@@ -289,16 +289,9 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 
-" python-mode
+" vim-fugitive - git wrapper
 " cd ~/vimfiles/bundle
 " git clone git://github.com/klen/python-mode.git
-map <Leader>g :call RopeGotoDefinition()<CR>
-let ropevim_enable_shortcuts=1
-let g:pymode_rope_goto_def_newwin="vnew"
-let g:pymode_rope_extended_complete=1
-let g:pymode_syntax=1
-let g:pymode_syntax_builtin_objs=0
-let g:pymode_syntax_builtin_funcs=0
 
 " Better navigation through omnicomplete option list
 " http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
@@ -316,11 +309,19 @@ endfunction
 inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
 inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
+" python-mode
+" cd ~/vimfiles/bundle
+" git clone git://github.com/klen/python-mode.git
+map <Leader>g :call RopeGotoDefinition()<CR>
+let ropevim_enable_shortcuts=1
+let g:pymode_rope_goto_def_newwin="vnew"
+let g:pymode_rope_extended_complete=1
+let g:pymode_syntax=1
+let g:pymode_syntax_builtin_objs=0
+let g:pymode_syntax_builtin_funcs=0
+
 " Python folding
 " cd ~/vimfiles/ftplugin
 " wget http://www.vim.org/scripts/script.php?script_id=1494
 set nofoldenable
 
-" vim-fugitive - git wrapper
-" cd ~/vimfiles/bundle
-" git clone git://github.com/klen/python-mode.git
