@@ -280,6 +280,7 @@ set write
 " git clone git://github.com/Lokaltog/powerline.git
 " set rtp+=~\vimfiles\bundle\powerline\bindings\vim
 set laststatus=2
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 " CtrlP
 " cd ~/vimfiles/bundle
@@ -288,10 +289,12 @@ let g:ctrlp_max_height=30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*        " Linux/MacOSX
+set wildignore+=*\\.git\\*,*\\.hg\\*,*\\.svn\\*  " Windows ('noshellslash')
 
 " vim-fugitive - git wrapper
 " cd ~/vimfiles/bundle
-" git clone git://github.com/klen/python-mode.git
+" git clone git://github.com/tpope/vim-fugitive.git
 
 " Better navigation through omnicomplete option list
 " http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
