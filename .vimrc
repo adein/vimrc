@@ -286,6 +286,7 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 " cd ~/vimfiles/bundle
 " git clone git://github.com/kien/ctrlp.vim.git
 let g:ctrlp_max_height=30
+let g:ctrlp_working_path_mode='ra'
 set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
