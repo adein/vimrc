@@ -3,8 +3,8 @@ behave mswin
 
 
 " Automatic reloading of vimrc file
-autocmd! bufwritepost .vimrc source %
-autocmd! bufwritepost _vimrc source %
+"autocmd! bufwritepost .vimrc source %
+"autocmd! bufwritepost _vimrc source %
 
 " Use Pathogen to manage plugins
 " mkdir ~/vimfiles/autoload
@@ -238,9 +238,10 @@ color elflord
 
 " Show a column at 80 characters to denote where lines should end
 "set colorcolumn=80
-execute "set colorcolumn=" . join(range(81,335), ',')
-highlight ColorColumn ctermbg=233 guibg=#1c1c1c 
+"execute "set colorcolumn=" . join(range(81,335), ',')
+"highlight ColorColumn ctermbg=233 guibg=#1c1c1c 
 
+set guifont=Menlo\ Regular:h13
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Selection
@@ -328,4 +329,10 @@ let g:pymode_syntax_builtin_funcs=0
 " cd ~/vimfiles/ftplugin
 " wget http://www.vim.org/scripts/script.php?script_id=1494
 set nofoldenable
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 5
 
