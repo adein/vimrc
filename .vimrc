@@ -55,6 +55,8 @@ noremap <F1> <Esc>
 " Map Q to repeat the last macro
 map Q @@
 
+" Remove ^M
+noremap <Leader>w :%s/\r//g<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Copy/Paste
